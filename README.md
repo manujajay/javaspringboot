@@ -24,6 +24,7 @@ public class HelloController {
         return "Hello from Spring!";
     }
 }
+```
 
 To enable CORS for the entire application, create a configuration class named MyConfiguration.java in your project's main package.
 
@@ -48,9 +49,11 @@ public class MyConfiguration implements WebMvcConfigurer {
 Run your Spring Boot application. The server will start on http://localhost:8080.
 
 
-Frontend Setup (React)
+## Frontend Setup (React)
 Create a new React application using Create React App or your preferred method.
 Replace the contents of App.js with the following:
+
+```javascript
 
 import React, { Component } from 'react';
 import './App.css';
@@ -90,6 +93,7 @@ class App extends Component {
 
 export default App;
 
+```
 Run your React application. The server will start on http://localhost:3000.
 
 Now, when you navigate to http://localhost:3000, you should see the greeting message from the Spring Boot application displayed on the page.
