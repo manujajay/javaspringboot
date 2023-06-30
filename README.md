@@ -28,6 +28,7 @@ public class HelloController {
 
 To enable CORS for the entire application, create a configuration class named MyConfiguration.java in your project's main package.
 
+```java
 package com.example.demo;
 
 import org.springframework.context.annotation.Configuration;
@@ -44,7 +45,7 @@ public class MyConfiguration implements WebMvcConfigurer {
                 .allowedMethods("*");
     }
 }
-
+```
 
 Run your Spring Boot application. The server will start on http://localhost:8080.
 
